@@ -1,0 +1,55 @@
+picotron cartridge // www.picotron.net
+version 2
+
+:: .info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEwLTA4IDAzOjQyOjM0Iixtb2RpZmllZD0iMjAyNC0x
+MC0wOCAwNDowMjoyNCIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjI2Iix3b3Jrc3BhY2VzPXt7
+bG9jYXRpb249Im1haW4ubHVhIzEiLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249ImdmeC8w
+LmdmeCIsd29ya3NwYWNlX2luZGV4PTJ9LHtsb2NhdGlvbj0ibWFwLzAubWFwIix3b3Jrc3BhY2Vf
+aW5kZXg9M30se2xvY2F0aW9uPSJzZngvMC5zZngiLHdvcmtzcGFjZV9pbmRleD00fX1dXWx6NAAE
+AAAAAwAAADBuaWw=
+:: gfx/
+:: gfx/.info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0x
+MC0wOCAwNDowMjoyNCIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Il1dbHo0AAQAAAADAAAA
+MG5pbA==
+:: gfx/0.gfx
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0w
+My0yNCAwMDo0ODoyNiIscmV2aXNpb249MV1dbHo0AG0AAAAFMQAA8xR7WzBdPXtibXA9cHh1AEMg
+EBAE8PAsZmxhZ3M9MCxwYW5feAgAz3k9MCx6b29tPTh9LDEA----------------------------
+------------------------------------51BtPTh9fQ==
+:: sfx/
+:: sfx/.info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0x
+MC0wOCAwNDowMjoyNCIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Il1dbHo0AAQAAAADAAAA
+MG5pbA==
+:: sfx/0.sfx
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0w
+My0yNCAwMDo0ODoyNiIscmV2aXNpb249MV1dbHo0ABABAABRBwAA8CdweHUAAygAAAMABA9AEAIO
+AAGgASACoA4ADxAADfDKAQIDBAUGBwAP-5AICQoLDwwPDQ8ODw8QAPAADQ8RDxIPEw8UDxUPFg8X
+EwDxAQ8YDxkPGg8bDxwPHQ8eDx8UAPEAIA8hDyIPIw8kDyUPJg8nFADxACgPKQ8qDysPLA8tDy4P
+LxQA8QAwDzEPMg8zDzQPNQ82DzcUAP8FOA85DzoPOw88Dz0PPg8-AA--8P8BAOv-J1oBEAYPIBAB
+IAEgAfAAAhACDBABIA8hIAEwD0Dwww8oD--wxg-4Cg--D4AP9w8NAfAJARAGDDAA-zkf-wEA3L-4
+D0AADUD--7DwcAoA--9kH-8BAJdQ-----x8=
+:: main.lua
+--[[pod_format="raw",created="2024-03-24 00:48:06",modified="2024-10-08 20:32:19",revision=21]]
+function _init()
+	window{
+		x=300, y=112,
+		width = 180,
+		height = 158,
+		title = "Toolbox",
+		pausable = false,
+		resizable = false,
+		has_frame = false
+	}
+end
+
+function _draw()
+	cls(7)
+	rectfill(0, 0, 180, 13, 6)
+	rect(0, 0, 179, 158, 0)
+	line(0, 13, 180, 13, 0)
+	print("Toolbox", 80, 4, 0)
+end
+:: [eoc]

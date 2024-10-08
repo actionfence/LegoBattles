@@ -1,0 +1,54 @@
+picotron cartridge // www.picotron.net
+version 2
+
+:: .info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEwLTA4IDIyOjM2OjI5Iixtb2RpZmllZD0iMjAyNC0x
+MC0wOCAyMjo0MjoxMSIscnVudGltZT03LHN0b3JlZD0iMjAyNC0wMy0yNCAwMDo0ODoyNiIsd29y
+a3NwYWNlcz17e2xvY2F0aW9uPSJtYWluLmx1YSMxMCIsd29ya3NwYWNlX2luZGV4PTF9LHtsb2Nh
+dGlvbj0iZ2Z4LzAuZ2Z4Iix3b3Jrc3BhY2VfaW5kZXg9Mn0se2xvY2F0aW9uPSJtYXAvMC5tYXAi
+LHdvcmtzcGFjZV9pbmRleD0zfSx7bG9jYXRpb249InNmeC8wLnNmeCIsd29ya3NwYWNlX2luZGV4
+PTR9fV1dbHo0AAQAAAADAAAAMG5pbA==
+:: gfx/
+:: gfx/.info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0x
+MC0wOCAyMjo0MjoxMSIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Il1dbHo0AAQAAAADAAAA
+MG5pbA==
+:: gfx/0.gfx
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0x
+MC0wOCAyMjo0MTozMCIscmV2aXNpb249NV1dbHo0AG0AAAAFMQAA8xR7WzBdPXtibXA9cHh1AEMg
+EBAE8PAsZmxhZ3M9MCxwYW5feAgAz3k9MCx6b29tPTh9LDEA----------------------------
+------------------------------------51BtPTh9fQ==
+:: sfx/
+:: sfx/.info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0x
+MC0wOCAyMjo0MjoxMSIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Il1dbHo0AAQAAAADAAAA
+MG5pbA==
+:: sfx/0.sfx
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0x
+MC0wOCAyMjo0MTozMCIscmV2aXNpb249NV1dbHo0ABEBAABSCAAA8CdweHUAAygAAAQABA9AEAIO
+AAGgASACoA4ADxAADfDKAQIDBAUGBwAP-5AICQoLDwwPDQ8ODw8QAPAADQ8RDxIPEw8UDxUPFg8X
+EwDxAQ8YDxkPGg8bDxwPHQ8eDx8UAPEAIA8hDyIPIw8kDyUPJg8nFADxACgPKQ8qDysPLA8tDy4P
+LxQA8QAwDzEPMg8zDzQPNQ82DzcUAP8FOA85DzoPOw88Dz0PPg8-AA--8P8BAOv-J1oBEAYPIBAB
+IAEgAfAAAhACDBABIA8hIAEwD0Dwww8oD--wxg-4Cg--D4AP9w8NAfAJARAGDDAA-zkf-wEA3L-4
+D0AADUD--7DwcAoA--9kH-8BAP_ZUP----8g
+:: main.lua
+--[[pod_format="raw",created="2024-03-24 00:48:06",modified="2024-10-08 22:46:20",revision=19]]
+function _init()
+	builderWin = window{
+		x = 0, y = 215,
+		height = 50, width = 300,
+		title = "Information",
+		pausable = false,
+		resizable = false,
+		has_frame = false
+	}
+end
+
+function _draw()
+	cls(7)
+	rectfill(0, 0, 300, 13, 6)
+	rect(0, 0, 299, 99, 0)
+	line(0, 13, 300, 13, 0)
+	print("Information", 120, 4, 0)
+end
+:: [eoc]
